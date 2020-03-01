@@ -7,7 +7,13 @@
 //
 
 @import XCTest;
-@import Base32;
+
+
+@interface NSData (Base32Addition)
++(NSData *)dataWithBase32String:(NSString *)base32String;
+-(NSString *)base32String;
+@end
+
 
 
 @interface Base32Tests : XCTestCase
