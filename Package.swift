@@ -12,6 +12,7 @@ let package = Package(
     products: [
         .library(
             name: "Base32",
+            type: .dynamic,
             targets: ["Base32"]
         ),
     ],
